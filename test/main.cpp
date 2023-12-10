@@ -27,7 +27,7 @@ void test_image(){
 
     stbi_write_jpg("a.jpg", w, h, n, img_buf, 0);
 
-    vector<uint64_t> shape({uint64_t(w), uint64_t(h), 3});
+    vector<unsigned long int> shape({(unsigned long int)(w), (unsigned long int)(h), 3});
 
     itools::Matrix<unsigned char> image(shape, img_buf);
 
